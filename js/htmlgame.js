@@ -4,42 +4,42 @@ var debug = false;
 var data = [
 	{
 		name: 'Wurzelelement',
-		elements: [{ name: 'html', role: 'root element' }]
+		elements: [{name: 'html', role: 'root element'}]
 	}, {
 		name: 'Metadaten',
-		elements: [{ name: 'head', role: 'document metadata container' }, { name: 'title', role: 'document title' }, { name: 'base', role: 'base URL' }, { name: 'link', role: 'inter-document relationship metadata' }, { name: 'meta', role: 'metadata' }, { name: 'style', role: 'style (presentation) information' }]
+		elements: [{name: 'head', role: 'document metadata container'}, {name: 'title', role: 'document title'}, {name: 'base', role: 'base URL'}, {name: 'link', role: 'inter-document relationship metadata'}, {name: 'meta', role: 'metadata'}, {name: 'style', role: 'style (presentation) information'}]
 	}, {
 		name: 'Abschnitte',
-		elements: [{ name: 'body', role: 'document body' }, { name: 'article', role: 'article' }, { name: 'section', role: 'section' }, { name: 'nav', role: 'group of navigational links' }, { name: 'aside', role: 'tangential content' }, { name: 'h1', role: 'heading' }, { name: 'h2', role: 'heading' }, { name: 'h3', role: 'heading' }, { name: 'h4', role: 'heading' }, { name: 'h5', role: 'heading' }, { name: 'h6', role: 'heading' }, { name: 'header', role: 'header' }, { name: 'footer', role: 'footer' }, { name: 'address', role: 'contact information' }]
+		elements: [{name: 'body', role: 'document body'}, {name: 'article', role: 'article'}, {name: 'section', role: 'section'}, {name: 'nav', role: 'group of navigational links'}, {name: 'aside', role: 'tangential content'}, {name: 'h1', role: 'heading'}, {name: 'h2', role: 'heading'}, {name: 'h3', role: 'heading'}, {name: 'h4', role: 'heading'}, {name: 'h5', role: 'heading'}, {name: 'h6', role: 'heading'}, {name: 'header', role: 'header'}, {name: 'footer', role: 'footer'}, {name: 'address', role: 'contact information'}]
 	}, {
-		name: 'Inhtaltsgruppierung',
-		elements: [{ name: 'p', role: 'paragraph' }, { name: 'hr', role: 'thematic break' }, { name: 'pre', role: 'preformatted text' }, { name: 'blockquote', role: 'block quotation' }, { name: 'ol', role: 'ordered list' }, { name: 'ul', role: 'unordered list' }, { name: 'li', role: 'list item' }, { name: 'dl', role: 'description list' }, { name: 'dt', role: 'term or name' }, { name: 'dd', role: 'description or value' }, { name: 'figure', role: 'figure with optional caption' }, { name: 'figcaption', role: 'figure caption' }, { name: 'div', role: 'generic flow container' }, { name: 'main', role: 'main content' }]
+		name: 'Inhaltsgruppierung',
+		elements: [{name: 'p', role: 'paragraph'}, {name: 'hr', role: 'thematic break'}, {name: 'pre', role: 'preformatted text'}, {name: 'blockquote', role: 'block quotation'}, {name: 'ol', role: 'ordered list'}, {name: 'ul', role: 'unordered list'}, {name: 'li', role: 'list item'}, {name: 'dl', role: 'description list'}, {name: 'dt', role: 'term or name'}, {name: 'dd', role: 'description or value'}, {name: 'figure', role: 'figure with optional caption'}, {name: 'figcaption', role: 'figure caption'}, {name: 'div', role: 'generic flow container'}, {name: 'main', role: 'main content'}]
 	}, {
 		name: 'Textsemantik',
-		elements: [{ name: 'a', role: 'hyperlink' }, { name: 'em', role: 'emphatic stress' }, { name: 'strong', role: 'strong importance' }, { name: 'small', role: 'small print' }, { name: 's', role: 'struck text' }, { name: 'cite', role: 'cited title of a work' }, { name: 'q', role: 'quoted text' }, { name: 'dfn', role: 'defining instance' }, { name: 'abbr', role: 'abbreviation' }, { name: 'data', role: 'machine-readable contents' }, { name: 'time', role: 'date and/or time' }, { name: 'code', role: 'code fragment' }, { name: 'var', role: 'variable or placeholder text' }, { name: 'samp', role: '(sample) output' }, { name: 'kbd', role: 'user input' }, { name: 'sub', role: 'subscript' }, { name: 'sup', role: 'superscript' }, { name: 'i', role: 'offset text conventionally styled in italic' }, { name: 'b', role: 'offset text conventionally styled in bold' }, { name: 'u', role: 'offset text conventionally styled with an underline' }, { name: 'mark', role: 'marked (highlighted) text' }, { name: 'ruby', role: 'ruby annotation' }, { name: 'rt', role: 'ruby text' }, { name: 'rp', role: 'ruby parenthesis' }, { name: 'bdi', role: 'BiDi isolate' }, { name: 'bdo', role: 'BiDi override' }, { name: 'span', role: 'generic span' }, { name: 'br', role: 'line break' }, { name: 'wbr', role: 'line-break opportunity' }]
+		elements: [{name: 'a', role: 'hyperlink'}, {name: 'em', role: 'emphatic stress'}, {name: 'strong', role: 'strong importance'}, {name: 'small', role: 'small print'}, {name: 's', role: 'struck text'}, {name: 'cite', role: 'cited title of a work'}, {name: 'q', role: 'quoted text'}, {name: 'dfn', role: 'defining instance'}, {name: 'abbr', role: 'abbreviation'}, {name: 'data', role: 'machine-readable contents'}, {name: 'time', role: 'date and/or time'}, {name: 'code', role: 'code fragment'}, {name: 'var', role: 'variable or placeholder text'}, {name: 'samp', role: '(sample) output'}, {name: 'kbd', role: 'user input'}, {name: 'sub', role: 'subscript'}, {name: 'sup', role: 'superscript'}, {name: 'i', role: 'offset text conventionally styled in italic'}, {name: 'b', role: 'offset text conventionally styled in bold'}, {name: 'u', role: 'offset text conventionally styled with an underline'}, {name: 'mark', role: 'marked (highlighted) text'}, {name: 'ruby', role: 'ruby annotation'}, {name: 'rb', role: 'ruby base text'}, {name: 'rtc', role: 'ruby text container'}, {name: 'rt', role: 'ruby text'}, {name: 'rp', role: 'ruby parenthesis'}, {name: 'bdi', role: 'BiDi isolate'}, {name: 'bdo', role: 'BiDi override'}, {name: 'span', role: 'generic span'}, {name: 'br', role: 'line break'}, {name: 'wbr', role: 'line-break opportunity'}]
 	}, {
 		name: 'Bearbeitung',
-		elements: [{ name: 'ins', role: 'inserted text' }, { name: 'del', role: 'deleted text' }]
+		elements: [{name: 'ins', role: 'inserted text'}, {name: 'del', role: 'deleted text'}]
 	}, {
 		name: 'Eingebettete Inhalte',
-		elements: [{ name: 'img', role: 'image' }, { name: 'iframe', role: 'nested browsing context (inline frame)' }, { name: 'embed', role: 'integration point for plugins' }, { name: 'object', role: 'generic external content' }, { name: 'param', role: 'initialization parameters for plugins' }, { name: 'video', role: 'video' }, { name: 'audio', role: 'audio stream' }, { name: 'source', role: 'media source' }, { name: 'track', role: 'supplementary media track' }, { name: 'map', role: 'image-map definition' }, { name: 'area', role: 'image-map hyperlink' }, { name: 'math', role: 'MathML container' }, { name: 'svg', role: 'SVG container' }]
+		elements: [{name: 'img', role: 'image'}, {name: 'iframe', role: 'nested browsing context (inline frame)'}, {name: 'embed', role: 'integration point for plugins'}, {name: 'object', role: 'generic external content'}, {name: 'param', role: 'initialization parameters for plugins'}, {name: 'video', role: 'video'}, {name: 'audio', role: 'audio stream'}, {name: 'source', role: 'media source'}, {name: 'track', role: 'supplementary media track'}, {name: 'map', role: 'image-map definition'}, {name: 'area', role: 'image-map hyperlink'}, {name: 'math', role: 'MathML container'}, {name: 'svg', role: 'SVG container'}]
 	}, {
 		name: 'Tabellendaten',
-		elements: [{ name: 'table', role: 'table' }, { name: 'caption', role: 'table title' }, { name: 'colgroup', role: 'table column group' }, { name: 'col', role: 'table column' }, { name: 'tbody', role: 'table row group' }, { name: 'thead', role: 'table heading group' }, { name: 'tfoot', role: 'table footer row group' }, { name: 'tr', role: 'table row' }, { name: 'td', role: 'table cell' }, { name: 'th', role: 'table header cell' }]
+		elements: [{name: 'table', role: 'table'}, {name: 'caption', role: 'table title'}, {name: 'colgroup', role: 'table column group'}, {name: 'col', role: 'table column'}, {name: 'tbody', role: 'table row group'}, {name: 'thead', role: 'table heading group'}, {name: 'tfoot', role: 'table footer row group'}, {name: 'tr', role: 'table row'}, {name: 'td', role: 'table cell'}, {name: 'th', role: 'table header cell'}]
 	}, {
 		name: 'Formulare',
-		elements: [{ name: 'form', role: 'user-submittable form' }, { name: 'label', role: 'caption for a form control' }, { name: 'input', role: 'input control' }, { name: 'button', role: 'button' }, { name: 'select', role: 'option-selection form control' }, { name: 'datalist', role: 'predefined options for other controls' }, { name: 'optgroup', role: 'group of options' }, { name: 'option', role: 'option' }, { name: 'textarea', role: 'text input area' }, { name: 'keygen', role: 'key-pair generator/input control' }, { name: 'output', role: 'result of a calculation in a form' }, { name: 'progress', role: 'progress indicator' }, { name: 'meter', role: 'scalar gauge' }, { name: 'fieldset', role: 'set of related form controls' }, { name: 'legend', role: 'title or explanatory caption' }]
+		elements: [{name: 'form', role: 'user-submittable form'}, {name: 'label', role: 'caption for a form control'}, {name: 'input', role: 'input control'}, {name: 'button', role: 'button'}, {name: 'select', role: 'option-selection form control'}, {name: 'datalist', role: 'predefined options for other controls'}, {name: 'optgroup', role: 'group of options'}, {name: 'option', role: 'option'}, {name: 'textarea', role: 'text input area'}, {name: 'keygen', role: 'key-pair generator/input control'}, {name: 'output', role: 'result of a calculation in a form'}, {name: 'progress', role: 'progress indicator'}, {name: 'meter', role: 'scalar gauge'}, {name: 'fieldset', role: 'set of related form controls'}, {name: 'legend', role: 'title or explanatory caption'}]
 	}, {
 		name: 'Skripte',
-		elements: [{ name: 'script', role: 'embedded script' }, { name: 'noscript', role: 'fallback content for script' }, { name: 'template', role: 'fragments of HTML to be cloned and inserted' }, { name: 'canvas', role: 'canvas for dynamic graphics' }]
+		elements: [{name: 'script', role: 'embedded script'}, {name: 'noscript', role: 'fallback content for script'}, {name: 'template', role: 'fragments of HTML to be cloned and inserted'}, {name: 'canvas', role: 'canvas for dynamic graphics'}]
 	}, {
 		name: 'Experimentell',
 		value: 'bonus',
-		elements: [{ name: 'hgroup', role: 'heading group' }, { name: 'details', role: 'control for additional on-demand information' }, { name: 'summary', role: 'summary, caption, or legend for details' }, { name: 'menu', role: 'list of commands' }, { name: 'menuitem', role: '' }, { name: 'picture', role: '' }, { name: 'command', role: 'command' }, { name: 'dialog', role: '' }, { name: 'shadow', role: '' }, { name: 'content', role: '' }]
+		elements: [{name: 'hgroup', role: 'heading group'}, {name: 'details', role: 'control for additional on-demand information'}, {name: 'summary', role: 'summary, caption, or legend for details'}, {name: 'menu', role: 'list of commands'}, {name: 'menuitem', role: ''}, {name: 'picture', role: ''}, {name: 'command', role: 'command'}, {name: 'dialog', role: ''}, {name: 'shadow', role: ''}, {name: 'content', role: ''}]
 	}, {
 		name: 'Veraltet',
 		value: 'malus',
-		elements: [{ name: 'applet', role: 'Use embed or object instead' }, { name: 'acronym', role: 'Use abbr instead' }, { name: 'bgsound', role: 'Use audio instead' }, { name: 'dir', role: 'Use ul instead' }, { name: 'frame', role: 'Use iframe and CSS or server-side includes' }, { name: 'frameset', role: 'Use iframe and CSS or server-side includes' }, { name: 'noframes', role: 'Use iframe and CSS or server-side includes' }, { name: 'isindex', role: 'Use an explicit form and text field combination instead' }, { name: 'listing', role: 'Use pre and code instead' }, { name: 'nextid', role: 'Use GUIDs instead' }, { name: 'noembed', role: 'Use object instead of embed when fallback is necessary' }, { name: 'plaintext', role: 'Use the "text/plain" MIME type instead' }, { name: 'rb', role: 'Providing the ruby base directly inside the ruby element or using nested ruby elements is sufficient (WHATWG)' }, { name: 'rtc', role: 'Providing the ruby base directly inside the ruby element or using nested ruby elements is sufficient (WHATWG)' }, { name: 'strike', role: 'Use del if the element is marking an edit, otherwise use s' }, { name: 'xmp', role: 'Use pre and code instead' }, { name: 'basefont', role: 'Use appropriate elements or CSS instead' }, { name: 'big', role: 'Use h1, strong or mark' }, { name: 'blink', role: 'Use appropriate elements or CSS instead' }, { name: 'center', role: 'Use appropriate elements or CSS instead' }, { name: 'font', role: 'Use appropriate elements or CSS instead' }, { name: 'marquee', role: 'Use appropriate elements or CSS instead' }, { name: 'multicol', role: 'Use appropriate elements or CSS instead' }, { name: 'nobr', role: 'Use appropriate elements or CSS instead' }, { name: 'spacer', role: 'Use appropriate elements or CSS instead' }, { name: 'tt', role: 'Use kbd, var, code or samp element' }]
+		elements: [{name: 'applet', role: 'Use embed or object instead'}, {name: 'acronym', role: 'Use abbr instead'}, {name: 'bgsound', role: 'Use audio instead'}, {name: 'dir', role: 'Use ul instead'}, {name: 'frame', role: 'Use iframe and CSS or server-side includes'}, {name: 'frameset', role: 'Use iframe and CSS or server-side includes'}, {name: 'noframes', role: 'Use iframe and CSS or server-side includes'}, {name: 'isindex', role: 'Use an explicit form and text field combination instead'}, {name: 'listing', role: 'Use pre and code instead'}, {name: 'nextid', role: 'Use GUIDs instead'}, {name: 'noembed', role: 'Use object instead of embed when fallback is necessary'}, {name: 'plaintext', role: 'Use the "text/plain" MIME type instead'}, {name: 'strike', role: 'Use del if the element is marking an edit, otherwise use s'}, {name: 'xmp', role: 'Use pre and code instead'}, {name: 'basefont', role: 'Use appropriate elements or CSS instead'}, {name: 'big', role: 'Use h1, strong or mark'}, {name: 'blink', role: 'Use appropriate elements or CSS instead'}, {name: 'center', role: 'Use appropriate elements or CSS instead'}, {name: 'font', role: 'Use appropriate elements or CSS instead'}, {name: 'marquee', role: 'Use appropriate elements or CSS instead'}, {name: 'multicol', role: 'Use appropriate elements or CSS instead'}, {name: 'nobr', role: 'Use appropriate elements or CSS instead'}, {name: 'spacer', role: 'Use appropriate elements or CSS instead'}, {name: 'tt', role: 'Use kbd, var, code or samp element'}]
 	}
 ];
 
@@ -109,7 +109,7 @@ var Game = React.createClass({
 			this.timer();
 		}
 		var input = ev.target.value;
-		this.setState({ input: input }, function () {
+		this.setState({ input: input}, function () {
 			if (els[input] !== undefined) {
 				if (els[input] === false) {
 					els[input] = true;
@@ -167,17 +167,17 @@ var Game = React.createClass({
 			React.createElement(Timer, { time: this.state.seconds, status: this.state.timer }),
 			React.createElement(
 				Output,
-				{ color: 'green', desc: 'HTML5-Elemente' },
+				{ color: 'green', desc: 'HTML5-Elemente'},
 				this.state.els
 			),
 			React.createElement(
 				Output,
-				{ color: 'blue', desc: 'Experimentell' },
+				{ color: 'blue', desc: 'Experimentell'},
 				this.state.experimental
 			),
 			React.createElement(
 				Output,
-				{ color: 'red', desc: 'Veraltet' },
+				{ color: 'red', desc: 'Veraltet'},
 				this.state.deprecated
 			),
 			React.createElement(Report, { result: this.state.result, timeRest: this.state.seconds })
@@ -196,7 +196,7 @@ var Counter = React.createClass({
 	render: function render() {
 		return React.createElement(
 			'div',
-			{ id: 'counter' },
+			{ id: 'counter'},
 			this.props.done,
 			' von ',
 			this.state.todo
@@ -213,7 +213,7 @@ var Timer = React.createClass({
 		seconds = seconds < 10 ? '0' + seconds : seconds.toString();
 		return React.createElement(
 			'div',
-			{ id: 'timer', className: this.props.status },
+			{ id: 'timer', className: this.props.status},
 			minutes,
 			':',
 			seconds
@@ -236,7 +236,7 @@ var Output = React.createClass({
 		if (this.props.children.length) {
 			return React.createElement(
 				'div',
-				{ className: this.props.color },
+				{ className: this.props.color},
 				this.props.desc,
 				': ',
 				this.props.children.sort().join(', ')
@@ -329,7 +329,7 @@ var ReportRow = React.createClass({
 			(function () {
 				if (_this4.props.data.found.length) return React.createElement(
 					'ul',
-					{ className: 'elementlist' },
+					{ className: 'elementlist'},
 					_this4.props.data.found.map(function (el, i) {
 						return React.createElement(ReportTag, { key: i, tag: el.name, comment: el.role, style: 'found' });
 					})
@@ -339,7 +339,7 @@ var ReportRow = React.createClass({
 			(function () {
 				if (_this4.props.data.missing.length) return React.createElement(
 					'ul',
-					{ className: 'elementlist' },
+					{ className: 'elementlist'},
 					_this4.props.data.missing.map(function (el, i) {
 						return React.createElement(ReportTag, { key: i, tag: el.name, comment: el.role, style: 'missed' });
 					})
@@ -358,7 +358,7 @@ var ReportTag = React.createClass({
 			null,
 			React.createElement(
 				'code',
-				{ className: this.props.style, title: this.props.comment },
+				{ className: this.props.style, title: this.props.comment},
 				this.props.tag
 			)
 		);
